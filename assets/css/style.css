@@ -1,0 +1,202 @@
+@charset "utf-8";
+body {
+    background: #fbfbfb;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.l-container {
+    display: block;
+    margin: 0px auto;
+    width: 560px;
+}
+
+/* コンテンツ部分 */
+
+.meishi {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.meishi .meishi-block {
+    align-items: center;
+    background: #fff;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    display: block;
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.meishi .meishi-block__contents {
+    display: block;
+    margin: 0px auto;
+    padding: 30px;
+    width: 100%;
+}
+
+.meishi .meishi-block__profile {}
+
+.meishi .meishi-block__profile .profile-box {
+    align-items: center;
+    display: flex;
+}
+
+.meishi .meishi-block__profile .profile-box__img {
+    display: block;
+    height: 60px;
+    width: 60px;
+}
+
+.meishi .meishi-block__profile .profile-box__img img {
+    height: 100%;
+    width: 100%;
+}
+
+.meishi .meishi-block__profile .profile-box__name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    margin-left: 20px;
+}
+
+.meishi .meishi-block__profile .comment-box,
+.meishi .meishi-block__item {
+    margin-top: 20px;
+}
+
+.meishi .meishi-block__profile .comment-box__option {
+    margin-top: 10px;
+}
+
+.meishi .meishi-block__profile .comment-box__option .text {
+    font-size: 12px;
+}
+
+.meishi .meishi-block__profile .comment-box__option .text.omake {
+    color: #a05555;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.75;
+}
+
+.meishi .meishi-block__item {
+    border-top: 1px dotted #adadad;
+    padding-top: 20px;
+}
+
+.meishi .meishi-block__item .link-box {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.meishi .meishi-block__item .link-box__item {
+    width: calc(100% / 3 - 5px);
+}
+
+.meishi .meishi-block__item .link-box__item--link {
+    align-items: center;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 100%;
+}
+
+.meishi .meishi-block__item .link-box__item--link:hover {
+    opacity: .7;
+}
+
+.meishi .meishi-block__item .link-box__item--link .name {
+    font-size: 14px;
+    line-height: 1;
+    align-items: center;
+    color: #fff;
+    display: flex;
+    padding-right: 20px;
+    position: relative;
+}
+
+.meishi .meishi-block__item .link-box__item--link .name:before {
+    background: url("../image/icon-blank.svg");
+    content: "";
+    height: 10px;
+    position: absolute;
+    right: 0;
+    width: 10px;
+}
+
+.meishi .meishi-block__item .link-box__item--link.portfolio {
+    background: #adadad;
+}
+
+.meishi .meishi-block__item .link-box__item--link.twitter {
+    background: #00acee;
+}
+
+.meishi .meishi-block__item .link-box__item--link.qiita {
+    background: #55c500;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25;
+    }
+
+    .l-container {
+        box-sizing: border-box;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .meishi {
+        width: 100%;
+    }
+
+    .meishi .meishi-main {
+        margin-top: 20px;
+    }
+
+    /* コンテンツ部分 */
+    .meishi .meishi-block {
+        display: block;
+        padding: 20px 30px;
+    }
+
+    .meishi .meishi-block__contents {
+        padding: 20px;
+    }
+
+    .meishi .meishi-block__profile {
+        width: 100%;
+    }
+
+    .meishi .meishi-block__item .link-box {
+        display: block;
+    }
+
+    .meishi .meishi-block__item .link-box__item {
+        width: 100%;
+    }
+
+    .meishi .meishi-block__item .link-box__item:nth-child(n+2) {
+        margin-top: 10px;
+    }
+}
